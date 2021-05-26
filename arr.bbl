@@ -1,0 +1,64 @@
+\begin{thebibliography}{9}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Bolukbasi et~al.(2016{\natexlab{a}})Bolukbasi, Chang, Zou, Saligrama,
+  and Kalai}]{bolukbasi2016man}
+Tolga Bolukbasi, Kai-Wei Chang, James Zou, Venkatesh Saligrama, and Adam Kalai.
+  2016{\natexlab{a}}.
+\newblock \href {http://arxiv.org/abs/1607.06520} {Man is to computer
+  programmer as woman is to homemaker? debiasing word embeddings}.
+
+\bibitem[{Bolukbasi et~al.(2016{\natexlab{b}})Bolukbasi, Chang, Zou, Saligrama,
+  and Kalai}]{biased_analogy-1607-06520}
+Tolga Bolukbasi, Kai{-}Wei Chang, James~Y. Zou, Venkatesh Saligrama, and Adam
+  Kalai. 2016{\natexlab{b}}.
+\newblock \href {http://arxiv.org/abs/1607.06520} {Man is to computer
+  programmer as woman is to homemaker? debiasing word embeddings}.
+\newblock \emph{CoRR}, abs/1607.06520.
+
+\bibitem[{Brunet et~al.(2018)Brunet, Alkalay{-}Houlihan, Anderson, and
+  Zemel}]{origins-1810-03611}
+Marc{-}Etienne Brunet, Colleen Alkalay{-}Houlihan, Ashton Anderson, and
+  Richard~S. Zemel. 2018.
+\newblock \href {http://arxiv.org/abs/1810.03611} {Understanding the origins of
+  bias in word embeddings}.
+\newblock \emph{CoRR}, abs/1810.03611.
+
+\bibitem[{Caliskan et~al.(2017)Caliskan, Bryson, and
+  Narayanan}]{caliskan2017semantics}
+Aylin Caliskan, Joanna~J Bryson, and Arvind Narayanan. 2017.
+\newblock Semantics derived automatically from language corpora contain
+  human-like biases.
+\newblock \emph{Science}, 356(6334):183--186.
+
+\bibitem[{Gonen and Goldberg(2019)}]{lipstick-1903-03862}
+Hila Gonen and Yoav Goldberg. 2019.
+\newblock \href {http://arxiv.org/abs/1903.03862} {Lipstick on a pig: Debiasing
+  methods cover up systematic gender biases in word embeddings but do not
+  remove them}.
+\newblock \emph{CoRR}, abs/1903.03862.
+
+\bibitem[{Islam et~al.(2016)Islam, Bryson, and Narayanan}]{weat-1608-07187}
+Aylin~Caliskan Islam, Joanna~J. Bryson, and Arvind Narayanan. 2016.
+\newblock \href {http://arxiv.org/abs/1608.07187} {Semantics derived
+  automatically from language corpora necessarily contain human biases}.
+\newblock \emph{CoRR}, abs/1608.07187.
+
+\bibitem[{Lison and Kutuzov(2017)}]{lison2017redefining}
+Pierre Lison and Andrey Kutuzov. 2017.
+\newblock Redefining context windows for word embedding models: An experimental
+  study.
+\newblock \emph{arXiv preprint arXiv:1704.05781}.
+
+\bibitem[{{\v R}eh{\r u}{\v r}ek and Sojka(2010)}]{rehurek_lrec}
+Radim {\v R}eh{\r u}{\v r}ek and Petr Sojka. 2010.
+\newblock {Software Framework for Topic Modelling with Large Corpora}.
+\newblock In \emph{{Proceedings of the LREC 2010 Workshop on New Challenges for
+  NLP Frameworks}}, pages 45--50, Valletta, Malta. ELRA.
+
+\bibitem[{Zhao et~al.(2018)Zhao, Zhou, Li, Wang, and Chang}]{zhao2018learning}
+Jieyu Zhao, Yichao Zhou, Zeyu Li, Wei Wang, and Kai-Wei Chang. 2018.
+\newblock \href {http://arxiv.org/abs/1809.01496} {Learning gender-neutral word
+  embeddings}.
+
+\end{thebibliography}
