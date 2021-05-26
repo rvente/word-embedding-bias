@@ -1,0 +1,131 @@
+%
+% File arr.tex
+%
+%% Based on the style files for ACL-IJCNLP 2021, which were
+%% Based on the style files for EMNLP 2020, which were
+%% Based on the style files for ACL 2020, which were
+%% Based on the style files for ACL 2018, NAACL 2018/19, which were
+%% Based on the style files for ACL-2015, with some improvements
+%%  taken from the NAACL-2016 style
+%% Based on the style files for ACL-2014, which were, in turn,
+%% based on ACL-2013, ACL-2012, ACL-2011, ACL-2010, ACL-IJCNLP-2009,
+%% EACL-2009, IJCNLP-2008...
+%% Based on the style files for EACL 2006 by 
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{arr}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\renewcommand{\UrlFont}{\ttfamily\small}
+\newcommand{\wvect}[1]{\accentset{\rightharpoonup}{#1}}
+
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+\aclfinalcopy % Uncomment this line for the final submission
+%\def\aclpaperid{***} %  Enter the acl Paper ID here
+
+%\setlength\titlebox{5cm}
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+% For proper rendering and hyphenation of words containing Latin characters (including in bib files)
+\usepackage[T1]{fontenc}
+% For Vietnamese characters
+% \usepackage[T5]{fontenc}
+% See https://www.latex-project.org/help/documentation/encguide.pdf for other character sets
+
+% This assumes your files are encoded as UTF8
+\usepackage[utf8]{inputenc}
+
+\title{Learned Gender Bias in Wikipedia Persists with Time}
+
+\author{Blake Vente \\
+  Hunter College\\
+  \texttt{Ralph.Vente09@myhunter.cuny.edu}}
+
+\date{\today{}}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Neural Word embeddings exhibit desirable properties when converting natural language to numerical vector representations. However, embeddings often internalize associations that parrot stereotypes in race, gender, and culture. Researchers have to mitigate word embedding bias by altering the model after training, or changing the loss function, but to address bias comprehensively, \citet{origins-1810-03611} turn to the data where these biases originate.
+\end{abstract}
+
+\section{Introduction}
+
+Distributional semantic models represent words with fixed-dimensional vectors based on the how words are used in context of other words in large quantities of unstructured text \cite{lison2017redefining}. Word embedding models in particular, represent words as low-dimensional vectors intended to capture functional and topical relations between words \cite{lison2017redefining}.
+
+
+Word embeddings have a wide variety of applications for natural language processing tasks including part-of-speech tagging, syntactic parsing, and named entity recognition \cite{lison2017redefining}. In general, word embeddings are broadly applicable for any machine learning system that operates on vectors, including deep learning models and . Independently of their training mechanisms, word embeddings reproduce the bias intrinsic to the data they were trained on.
+
+\section{Word Embedding Bias}
+
+If $T : V \to E$ denotes the embedding operation of word $v$ from vocabulary $V$ into embedding space $E$ with finite dimension $\dim E$, then we produce the well-documented and infamous expression $ T(\text{computer programmer}) - T(\mathrm{man}) + T(\mathrm{woman})  \approx T(\mathrm{homemaker})$ from \cite{biased_analogy-1607-06520}, which clearly exhibits the gender bias internalized by the learning algorithm that produced it.
+
+The presence of these dubious associations is not unique to one architecture or one configuration of hyper-parameters \cite{origins-1810-03611}. Thus, the inclusion of a word embedding step may compromise the integrity of downstream machine learning operations by injecting or accentuating this bias, making the process unsuitable for a wide range of applications. In sensitive domains such as granting loans, such model behavior may be illegal.
+
+\section{Prior Debiasing}
+
+Many researchers have attempted to reduce bias in these embedding models, with limited success. \citet{caliskan2017semantics}. These works can be partitioned ito two categories. First, there are those that alter the training process in some capacity. Then, there are those "post-processing" methods that alter vector representations at the end of training. Two such works follow: they define bias and attempt to minimize it without compromising performance on analogy tasks.
+
+For example \citet{bolukbasi2016man} formulate that the gender bias in a non-gendered word is its scalar projection on the $\Vec{\text{he}} - \Vec{\text{she}}$ axis. They zero out the first principal component in the gender direction.  \citet{lipstick-1903-03862} note that although the work was "extensive, thoughtful, and rigorous", the approach of \citet{bolukbasi2016man} is inherently limited as the chosen definition of bias is hand-selected. 
+
+By contrast, \citet{zhao2018learning} also attempt to mitigate historical biases in word embeddings, but they do so by altering the loss function of GloVe to concentrate onto the last element the component of the embedding most correlated with gender. Then, at inference time the last element of the embedding is truncated away an thus discarded, "encouraging" the representations of non-gendered words to be orthogonal to the gender direction. \citet{lipstick-1903-03862} opine that this method carries the right intuition -- the alterations the the model needs to happen at training time, but that the execution is still limited.
+
+The general critique of both methods is that the definition of bias relating to distance to the gender direction \citet{lipstick-1903-03862} believe that the correct method for removing gender bias, at a minimum, alters the training process.
+
+Considerable effort has been made to de-bias these word representations, but debiasing methods that don't take the data into consideration merely "cover-up" the biases without addressing the full associations themselves. In particular, \citet{lipstick-1903-03862} report that ``indirect bias'' is still very obvious even when direct bias is mitigated.
+
+
+\section{WEAT: Operationalizing Bias}
+
+As the desire to de-bias models gained traction, there was little consensus on how to quantify bias, making it difficult to compare debiasing methods. Thus, \citet{weat-1608-07187} developed the Word Embedding Association Test (WEAT) to quantify how word embeddings capture empirical information about the world from text corpora \citep[8]{weat-1608-07187}. WEAT score was modeled after the Implicit Association Test (IAT) as a source of documented human biases \citep[2]{weat-1608-07187}. Intuitively, WEAT is a generalization of the use of word embedding models to perform analogies. They first define  $s(w, A,B)= $
+$$\\ \frac{ \text{mean}_{a \in A} \cos(\hat{w}, \hat{a} )
+                    - \text{mean}_{b \in B} \cos(\hat{w}, \hat{b} ) }
+                    {\text{std}_{x\in A \cup B} \cos(\hat{w}, \hat{x})}$$  and then $S(X,Y,A,B) = \sum_{x\in X} s(x, A, B) -  \sum_{y\in Y} s(y, A, B)$. That is, $S$ measures how close the associations between the target and attribute are. The more similar two sets of words are, the higher the WEAT score will be between them.
+
+The minimum WEAT score is -2 and the maximum is 2.
+
+\subsection{Historical Biases in Word Embedding models are pervasive}
+
+The stereotypes reproduced by word embeddings are not just limited to gender, but also extend to race and culture.
+
+This reinforces the claim that word associations that reproduce historical biases are learned the same way as analogies without bias.
+% word embedding models are analogy machines and human data 
+
+\section{Experimental Setup}
+
+To examine the behavior of historical biases in word embeddings over time, I train GloVe and FastText word embedings using the Gensim library by \citet{rehurek_lrec}. 
+
+
+How does performance on analogies change with context window size increase?
+
+I define Window Sizes $W = \{1,5,10,15,20, 25, 30\}$ and architectures $W = \{\text{FastText}, \text{Word2Vec} \}$
+
+Claim: word embedding models learn bias the same way they do analogies.
+
+transitivity 
+
+\section{Implications}
+
+\section{Limitations}
+
+
+
+\bibliographystyle{acl_natbib}
+\bibliography{arr}
+
+%\appendix
+
+
+
+\end{document}
