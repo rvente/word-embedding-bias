@@ -1,17 +1,22 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{13}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
-\bibitem[{Bolukbasi et~al.(2016{\natexlab{a}})Bolukbasi, Chang, Zou, Saligrama,
-  and Kalai}]{bolukbasi2016man}
-Tolga Bolukbasi, Kai-Wei Chang, James Zou, Venkatesh Saligrama, and Adam Kalai.
-  2016{\natexlab{a}}.
-\newblock \href {http://arxiv.org/abs/1607.06520} {Man is to computer
-  programmer as woman is to homemaker? debiasing word embeddings}.
+\bibitem[{Agirre et~al.(2009)Agirre, Alfonseca, Hall, Kravalova, Pasca, and
+  Soroa}]{agirre2009study}
+Eneko Agirre, Enrique Alfonseca, Keith Hall, Jana Kravalova, Marius Pasca, and
+  Aitor Soroa. 2009.
+\newblock A study on similarity and relatedness using distributional and
+  wordnet-based approaches.
 
-\bibitem[{Bolukbasi et~al.(2016{\natexlab{b}})Bolukbasi, Chang, Zou, Saligrama,
-  and Kalai}]{biased_analogy-1607-06520}
+\bibitem[{Attardi(2014)}]{Wikiextractor2014}
+Giusepppe Attardi. 2014.
+\newblock Wikiextractor.
+\newblock \url{https://github.com/attardi/wikiextractor}.
+
+\bibitem[{Bolukbasi et~al.(2016)Bolukbasi, Chang, Zou, Saligrama, and
+  Kalai}]{biased_analogy-1607-06520}
 Tolga Bolukbasi, Kai{-}Wei Chang, James~Y. Zou, Venkatesh Saligrama, and Adam
-  Kalai. 2016{\natexlab{b}}.
+  Kalai. 2016.
 \newblock \href {http://arxiv.org/abs/1607.06520} {Man is to computer
   programmer as woman is to homemaker? debiasing word embeddings}.
 \newblock \emph{CoRR}, abs/1607.06520.
@@ -31,6 +36,12 @@ Aylin Caliskan, Joanna~J Bryson, and Arvind Narayanan. 2017.
   human-like biases.
 \newblock \emph{Science}, 356(6334):183--186.
 
+\bibitem[{Clark et~al.(2013)Clark, Fox, and Lappin}]{clark2013handbook}
+Alexander Clark, Chris Fox, and Shalom Lappin. 2013.
+\newblock \emph{The handbook of computational linguistics and natural language
+  processing}.
+\newblock John Wiley \& Sons.
+
 \bibitem[{Gonen and Goldberg(2019)}]{lipstick-1903-03862}
 Hila Gonen and Yoav Goldberg. 2019.
 \newblock \href {http://arxiv.org/abs/1903.03862} {Lipstick on a pig: Debiasing
@@ -49,6 +60,19 @@ Pierre Lison and Andrey Kutuzov. 2017.
 \newblock Redefining context windows for word embedding models: An experimental
   study.
 \newblock \emph{arXiv preprint arXiv:1704.05781}.
+
+\bibitem[{Mikolov et~al.(2013{\natexlab{a}})Mikolov, Le, and
+  Sutskever}]{mikolov2013exploiting}
+Tomas Mikolov, Quoc~V. Le, and Ilya Sutskever. 2013{\natexlab{a}}.
+\newblock \href {http://arxiv.org/abs/1309.4168} {Exploiting similarities among
+  languages for machine translation}.
+
+\bibitem[{Mikolov et~al.(2013{\natexlab{b}})Mikolov, Sutskever, Chen, Corrado,
+  and Dean}]{mikolov2013distributed}
+Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, and Jeffrey Dean.
+  2013{\natexlab{b}}.
+\newblock \href {http://arxiv.org/abs/1310.4546} {Distributed representations
+  of words and phrases and their compositionality}.
 
 \bibitem[{{\v R}eh{\r u}{\v r}ek and Sojka(2010)}]{rehurek_lrec}
 Radim {\v R}eh{\r u}{\v r}ek and Petr Sojka. 2010.
