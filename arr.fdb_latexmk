@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex arr"] 1622109879 "arr.aux" "arr.bbl" "arr" 1622109925
+["bibtex arr"] 1622109879 "arr.aux" "arr.bbl" "arr" 1622150016
   "./acl_natbib.bst" 1622056299 47585 c671f071a8f3957857acb307a7173505 ""
-  "arr.aux" 1622109925 3973 bccd768a08964c124b3a87bd77e76cdb "pdflatex"
+  "arr.aux" 1622150016 3973 bccd768a08964c124b3a87bd77e76cdb "pdflatex"
   "arr.bib" 1622104946 5160 01fc65cbd45726679c98d66e8cc2c818 ""
   (generated)
-  "arr.blg"
   "arr.bbl"
-["pdflatex"] 1622109925 "/media/vente/ADATA/research/word-embedings/blake/word-embedding-bias/arr.tex" "/media/vente/ADATA/research/word-embedings/blake/word-embedding-bias/arr.pdf" "arr" 1622109925
+  "arr.blg"
+["pdflatex"] 1622150015 "/media/vente/ADATA/research/word-embedings/blake/word-embedding-bias/arr.tex" "/media/vente/ADATA/research/word-embedings/blake/word-embedding-bias/arr.pdf" "arr" 1622150016
   "/etc/texmf/web2c/texmf.cnf" 1610422683 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/media/vente/ADATA/research/word-embedings/blake/word-embedding-bias/arr.aux" 1622109925 3973 bccd768a08964c124b3a87bd77e76cdb ""
-  "/media/vente/ADATA/research/word-embedings/blake/word-embedding-bias/arr.tex" 1622109925 20189 ec9be1c8ca83687f6a7c8cf65b590494 ""
+  "/media/vente/ADATA/research/word-embedings/blake/word-embedding-bias/arr.aux" 1622150016 3973 bccd768a08964c124b3a87bd77e76cdb ""
+  "/media/vente/ADATA/research/word-embedings/blake/word-embedding-bias/arr.tex" 1622150015 20188 2b0b8cf300ef9b59e9c92004a8a2327d ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1136768653 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -128,11 +128,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1610422696 4466278 956ccdc8d57f396eef7b8798b3b11e08 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1610422703 4878475 a45ffeb8cb2db8b998ee4f62839d43db ""
-  "arr.aux" 1622109925 3973 bccd768a08964c124b3a87bd77e76cdb "pdflatex"
+  "arr.aux" 1622150016 3973 bccd768a08964c124b3a87bd77e76cdb "pdflatex"
   "arr.bbl" 1622109879 3907 7269bf225408d725fcb542d699f1e7a1 "bibtex arr"
-  "arr.out" 1622109925 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "arr.out" 1622150015 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "arr.sty" 1622056299 21775 64647dc67ab51522cc059d77c7c0655c ""
-  "arr.tex" 1622109925 20189 ec9be1c8ca83687f6a7c8cf65b590494 ""
+  "arr.tex" 1622150015 20188 2b0b8cf300ef9b59e9c92004a8a2327d ""
   "figures/analogy-avg_x_math-art_2021.pdf" 1622106433 42019 dd889e945d06b3d815a6e4dfc15b8f08 ""
   "figures/analogy-avg_x_window_size_2021.pdf" 1622079698 35906 e4e58065095ae377212b21ff6499f8bf ""
   "figures/car-fam_x_window_size_2010.pdf" 1622079408 36086 1243aaabeacf68d61e694a41776822d4 ""
@@ -143,9 +143,9 @@
   "figures/king-man-woman-embedding.png" 1622074859 43509 1c86b290963e8a42b375cb6a71245185 ""
   "figures/wordsim_x_window-size_2021.pdf" 1622093402 35380 9bcac06637f9f3d80c6edcda92c32ecd ""
   (generated)
-  "/media/vente/ADATA/research/word-embedings/blake/word-embedding-bias/arr.log"
   "arr.pdf"
+  "/media/vente/ADATA/research/word-embedings/blake/word-embedding-bias/arr.log"
+  "/media/vente/ADATA/research/word-embedings/blake/word-embedding-bias/arr.pdf"
+  "arr.aux"
   "arr.log"
   "arr.out"
-  "arr.aux"
-  "/media/vente/ADATA/research/word-embedings/blake/word-embedding-bias/arr.pdf"
